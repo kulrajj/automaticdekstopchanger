@@ -13,36 +13,43 @@ Connect to VCC	VBUS
 GND	to any Pico GND
 TRIG to GP3
 ECHO to resistor divider → GP4
-               ECHO
-                 │
-                 │
-              [480Ω]
-                 │
-                 ●──────────── GP4
-                 │
-              [480Ω]
-                 │
-                 │
-                 ●──────────── GND                 WHOLE WIRING:
-                              HC-SR04
-        ┌───────────────┐
-        │ VCC TRIG ECHO GND
-        └──┬───┬────┬───┬┘
-           │   │    │   │
-           │   │    │   └────────── GND
-           │   │    │
-           │   │   [480Ω]
-           │   │    │
-           │   │    ●───────────── GP4
-           │   │    │
-           │   │   [480Ω]
-           │   │    │
-           │   │    └───────────── GND
-           │   │
-           │   └────────────────── GP3
-           │
-           └────────────────────── VBUS
-              Raspberry Pi Pico 2
+## 🔌 Wiring Diagram
+
+### Raspberry Pi Pico 2 + HC-SR04
+
+```text
+                         HC-SR04
+                    ┌───────────────┐
+                    │               │
+                    │ VCC TRIG ECHO GND
+                    └─┬───┬────┬───┬┘
+                      │   │    │   │
+                      │   │    │   └───────────────┐
+                      │   │    │                   │
+                      │   │   [480Ω]               │
+                      │   │    │                   │
+                      │   │    ●──────── GP4       │
+                      │   │    │                   │
+                      │   │   [480Ω]               │
+                      │   │    │                   │
+                      │   │    └───────────────────┤
+                      │   │                        │
+                      │   └──────────── GP3        │
+                      │                            │
+                      └──────────────── VBUS       │
+                                                   │
+                                                   │
+                    Raspberry Pi Pico 2           │
+                  ┌──────────────────────┐         │
+                  │                      │         │
+                  │ VBUS  ───────────────┘         │
+                  │ GP3   ───── TRIG               │
+                  │ GP4   ───── ECHO divider       │
+                  │ GND   ────────────────┐        │
+                  │                      ││        │
+                  └──────────────────────┘│        │
+                                         ││        │
+                                         └─────────┘
               and now go to thonny or any other program to use the code for rasberry pi pico and paste the doorforpico.py code and run it.
               make sure it shows distance like:
               DOOR SYSTEM READY
