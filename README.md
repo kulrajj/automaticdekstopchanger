@@ -1,19 +1,34 @@
 ok so to use this first you have to stick the breadboard to the door frame horizontally and connect the pi to your computer
 if you have a w series pi then no need for the wire.
+
 REQUIREMENTS:
+
 breadboard (obviously)
+
 rasberry pico pi 1/2/1W/2W
+
 ultrasonic sensor HC-SR04
+
 4 jumper wires
+
 2 resistors any but i used 470ohm
+
 a cable to connect to pc or if W then no need
+
 FOR THE WIRING:
+
 HC-SR04	
+
 Connect to VCC	VBUS 
+
 GND	to any Pico GND
+
 TRIG to GP3
+
 ECHO to resistor divider → GP4
+
 ## Wiring Diagram
+
 ### Raspberry Pi Pico 2 + HC-SR04
                      
                          
