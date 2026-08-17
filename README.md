@@ -75,9 +75,10 @@ ECHO to resistor divider → GP4
               Distance: 56.9 cm
               Distance: 56.9 cm
               Distance: 57.1 cm
-    unless it prints this output, you might have done something wrong.
-    it took some time to get the resistors right make sure you connect the resistor as the HCSR04 can output 5v which may be dangerous for the pi.
-    after this, go and make a new python file and paste the contents of door.py and run it. you might get some errors.
+unless it prints this output, you might have done something wrong.
+    
+it took some time to get the resistors right make sure you connect the resistor as the HCSR04 can output 5v which may be dangerous for the pi.
+after this, go and make a new python file and paste the contents of door.py and run it. you might get some errors.
     TO FIX THEM:
     first make sure you have python 3.13 installed
     make sure you have pyautogui installed if not, RUN:
@@ -88,4 +89,4 @@ ECHO to resistor divider → GP4
     you might need to change the distance where the pico code says door opened so change the line(s):
     TRIGGER_DISTANCE = 30
     RESET_DISTANCE = 45
-    hope this works for you....
+hope this works for you....
