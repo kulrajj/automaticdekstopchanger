@@ -28,6 +28,7 @@ TRIG to GP3
 ECHO to resistor divider → GP4
 
 ## Wiring Diagram
+THE BELOW DIAGRAM WAS DONE BY AI!
 
 ### Raspberry Pi Pico 2 + HC-SR04
                      
@@ -96,7 +97,7 @@ ECHO to resistor divider → GP4
               
 unless it prints this output, you might have done something wrong.
     
-it took some time to get the resistors right make sure you connect the resistor as the HCSR04 can output 5v which may be dangerous for the pi.
+it took some time to get the resistors right make sure you connect the resistor as the HCSR04 can output 5v which may be dangerous for the pi. i used chatgpt to help me with the resistors but i did everything else myself
 
 after this, go and make a new python file and paste the contents of door.py and run it. you might get some errors.
 
